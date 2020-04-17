@@ -28,10 +28,7 @@ resource "aws_instance" "test" {
      "echo localhost > /tmp/hosts",
      "ansible-pull -i /tmp/hosts -U  https://github.com/ragni085/ansible_new.git ansible/Playbooks/studentapp-webapp.yml -e DBUSER=student -e DBPASS=student1 -e DBHOST=localhost -e DBNAME=studentapp"
 
-
    ]
   }
 }
-
-
 

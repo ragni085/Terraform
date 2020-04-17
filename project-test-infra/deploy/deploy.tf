@@ -8,7 +8,7 @@ resource "null_resource" "deploy" {
     }
 
     inline = [
-      "ansible-pull -i /tmp/hosts -U  https://github.com/ragni085/ansible.git ansible/Playbooks/deploy.yml -e URL=${var.URL}"
+      "ansible-pull -i /tmp/hosts -U  https://github.com/ragni085/ansible_new.git ansible/Playbooks/deploy.yml -e URL=${var.URL}"
     ]
   }
 }
